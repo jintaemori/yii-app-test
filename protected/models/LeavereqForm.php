@@ -23,9 +23,13 @@ class LeavereqForm extends CFormModel
 	 */
 	public function leavereq()
 	{
+		$u = Yii::app()->user->id;
+		$criteria = array('condition' => "username = '$u'");
+		$comments = User::model()->find($criteria);
+		$id = $comments->id;
 		$connection=new CDbConnection('mysql:host=localhost','root','saisasank');
 		$connection->active=true;
-		$command = $connection->createCommand("use testdrive; INSERT INTO tbl_user (username, password, email) VALUES ('$this->reason', 'pass32', 'test32@example.com');");
+		$command = $connection->createCommand("use testdrive; INSERT INTO tbl_leavereq (id, reason, startdate, enddate, type) VALUES ('$id', '$this->reason', '$this->startdate', '$this->enddate', '$this->type');");
 		$command->execute();
 	}
 }

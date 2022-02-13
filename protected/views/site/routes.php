@@ -44,6 +44,12 @@
     foreach($comments as $k=>$v) {
         echo $v->username . " " . $v->email . "  " . $v->password . "</br>";
     }
+    echo Yii::app()->user->id;
+    // test32 delete
+    // $connection=new CDbConnection('mysql:host=localhost','root','saisasank');
+    // $connection->active=true;
+    // $command = $connection->createCommand("use testdrive; DELETE FROM tbl_user WHERE password = 'pass32';");
+    // $command->execute();
 
     //echo Yii::app()->user->lastLoginTime;
 ?>

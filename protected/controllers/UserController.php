@@ -36,7 +36,7 @@ class UserController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','retrievereq'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -126,6 +126,11 @@ class UserController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+	}
+
+	public function actionRetrievereq()
+	{
+		$this->render('retrievereq');
 	}
 
 	/**

@@ -4151,3 +4151,119 @@ REQUEST_URI=/yii/yii-test-app/index.php?r=emp/leavereq
 in C:\xampp\htdocs\yii\yii-test-app\protected\models\LeavereqForm.php (28)
 in C:\xampp\htdocs\yii\yii-test-app\protected\controllers\EmpController.php (64)
 in C:\xampp\htdocs\yii\yii-test-app\index.php (13)
+2022/02/13 22:39:26 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('retrievereq')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/retrievere...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+---
+2022/02/13 22:39:41 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('retrievereq')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/retrievere...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+---
+2022/02/13 22:39:42 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('retrievereq')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/retrievere...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+---
+2022/02/13 22:39:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('retrievereq')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/retrievere...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+---
+2022/02/13 22:40:09 [error] [php] include(Leavereq.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 C:\xampp\htdocs\yii\yii-test-app\protected\views\user\retrievereq.php(2): autoload()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(872): UserController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(785): UserController->renderPartial()
+#6 C:\xampp\htdocs\yii\yii-test-app\protected\controllers\UserController.php(133): UserController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRetrievereq()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+in C:\xampp\htdocs\yii\yii-test-app\protected\views\user\retrievereq.php (2)
+in C:\xampp\htdocs\yii\yii-test-app\protected\controllers\UserController.php (133)
+in C:\xampp\htdocs\yii\yii-test-app\index.php (13)
+2022/02/13 22:40:31 [error] [php] include(leavereq.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 C:\xampp\htdocs\yii\yii-test-app\protected\views\user\retrievereq.php(2): autoload()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(872): UserController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(785): UserController->renderPartial()
+#6 C:\xampp\htdocs\yii\yii-test-app\protected\controllers\UserController.php(133): UserController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRetrievereq()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\yii-test-app\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/yii-test-app/index.php?r=user/retrievereq
+in C:\xampp\htdocs\yii\yii-test-app\protected\views\user\retrievereq.php (2)
+in C:\xampp\htdocs\yii\yii-test-app\protected\controllers\UserController.php (133)
+in C:\xampp\htdocs\yii\yii-test-app\index.php (13)
