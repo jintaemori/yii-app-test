@@ -21,37 +21,35 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-<p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Fields with <span class="required">*</span> are required.</p>
 
-<div class="row">
-    <?php echo $form->labelEx($model,'reason'); ?>
-    <?php echo $form->textField($model,'reason'); ?>
-    <?php echo $form->error($model,'reason'); ?>
-</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'reason'); ?>
+        <?php echo $form->textField($model,'reason'); ?>
+        <?php echo $form->error($model,'reason'); ?>
+    </div>
 
-<div class="row">
-    <?php echo $form->labelEx($model,'startdate'); ?>
-    <?php echo $form->textField($model,'startdate'); ?>
-    <?php echo $form->error($model,'startdate'); ?>
-</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'startdate'); ?>
+        <?php echo $form->textField($model,'startdate'); ?>
+        <?php echo $form->error($model,'startdate'); ?>
+    </div>
 
-<div class="row">
-    <?php echo $form->labelEx($model,'enddate'); ?>
-    <?php echo $form->textField($model,'enddate'); ?>
-    <?php echo $form->error($model,'enddate'); ?>
-</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'enddate'); ?>
+        <?php echo $form->textField($model,'enddate'); ?>
+        <?php echo $form->error($model,'enddate'); ?>
+    </div>
 
-<div class="row">
-    <?php echo $form->labelEx($model,'type'); ?>
-    <?php echo $form->textField($model,'type'); ?>
-    <?php echo $form->error($model,'type'); ?>
-</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'type'); ?>
+        <?php echo $form->textField($model,'type'); ?>
+        <?php echo $form->error($model,'type'); ?>
+    </div>
 
-
-
-<div class="row buttons">
-    <?php echo CHtml::submitButton('Apply for leave'); ?>
-</div>
+    <div class="row buttons">
+        <?php echo CHtml::submitButton('Leavereq'); ?>
+    </div>
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->

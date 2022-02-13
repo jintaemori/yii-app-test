@@ -60,6 +60,10 @@ class EmpController extends Controller
     public function actionLeavereq()
 	{
 		$model=new LeavereqForm;
+		if(isset($_POST['LeavereqForm'])){
+			$model->attributes=$_POST['LeavereqForm'];
+			$model->leavereq();
+		}
 		$this->render('leavereq',array('model'=>$model));
 	}
 

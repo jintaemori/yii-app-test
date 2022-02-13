@@ -21,16 +21,30 @@
     // usable orm code    
     // $criteria = array("condition" => 'username like "test1%"');
     // $criteria = array('condition' => 'username = "test1"');
+
     // $u = "test122";
     // $criteria = array('condition' => "username = '$u'");
     // $comments = User::model()->find($criteria);
+
     // if ($comments == NULL){
     //     echo 'its null';
     // }
-    echo Yii::app()->user->lastLoginTime;
+    
     // foreach($comments as $k=>$v) {
     //     echo $v->username . " " . $v->email . "  " . $v->password . "</br>";
     // }
     // echo $comments->username . $comments->email . $comments->password;
+
+    $comments = User::model()->findAll();
+    
+    if ($comments == NULL){
+        echo 'its null';
+    }
+    
+    foreach($comments as $k=>$v) {
+        echo $v->username . " " . $v->email . "  " . $v->password . "</br>";
+    }
+
+    //echo Yii::app()->user->lastLoginTime;
 ?>
     
