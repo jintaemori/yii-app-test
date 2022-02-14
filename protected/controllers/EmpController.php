@@ -63,6 +63,7 @@ class EmpController extends Controller
 		if(isset($_POST['LeavereqForm'])){
 			$model->attributes=$_POST['LeavereqForm'];
 			$model->leavereq();
+			$this->redirect(Yii::app()->user->returnUrl);
 		}
 		$this->render('leavereq',array('model'=>$model));
 	}

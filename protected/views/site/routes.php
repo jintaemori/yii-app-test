@@ -1,7 +1,5 @@
 <?php
 
-    // 
-
     // $command = $connection->createCommand('use testdrive; SELECT * FROM tbl_user;');
     // $posts = $command->queryAll();
     // echo "<pre>";
@@ -35,22 +33,34 @@
     // }
     // echo $comments->username . $comments->email . $comments->password;
 
-    $comments = User::model()->findAll();
+
+
+    // $comments = User::model()->findAll();
     
-    if ($comments == NULL){
-        echo 'its null';
-    }
+    // if ($comments == NULL){
+    //     echo 'its null';
+    // }
     
-    foreach($comments as $k=>$v) {
-        echo $v->username . " " . $v->email . "  " . $v->password . "</br>";
-    }
-    echo Yii::app()->user->id;
+    // foreach($comments as $k=>$v) {
+    //     echo $v->username . " " . $v->email . "  " . $v->password . "</br>";
+    // }
+    // echo Yii::app()->user->id;
+
+
+
     // test32 delete
     // $connection=new CDbConnection('mysql:host=localhost','root','saisasank');
     // $connection->active=true;
     // $command = $connection->createCommand("use testdrive; DELETE FROM tbl_user WHERE password = 'pass32';");
     // $command->execute();
 
+    
+    // update
+    // $connection=new CDbConnection('mysql:host=localhost','root','saisasank');
+    // $connection->active=true;
+    // $command = $connection->createCommand("use testdrive; update tbl_leavereq set status = 0;");
+    // $command->execute();
+    
     //echo Yii::app()->user->lastLoginTime;
 ?>
     

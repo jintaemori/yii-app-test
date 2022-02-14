@@ -36,7 +36,7 @@ class UserController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','retrievereq'),
+				'actions'=>array('admin','delete','retrievereq', 'viewreq', 'accept', 'reject', 'indexreq'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -117,6 +117,29 @@ class UserController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
+	public function actionAccept($id)
+	{
+		$model = Leavereq::model()->findByPk($id);
+		$model->status = 1;
+		$model->save();
+		$this->redirect(Yii::app()->user->returnUrl);
+	}
+
+	public function actionReject($id)
+	{
+		$model = Leavereq::model()->findByPk($id);
+		$model->status = -1;
+		$model->save();
+		$this->redirect(Yii::app()->user->returnUrl);
+	}
+
+	public function actionViewreq($id)
+	{
+		$this->render('viewreq',array(
+			'model'=>$this->loadModelreq($id),
+		));
+	}
+
 	/**
 	 * Lists all models.
 	 */
@@ -128,9 +151,12 @@ class UserController extends Controller
 		));
 	}
 
-	public function actionRetrievereq()
+	public function actionIndexreq()
 	{
-		$this->render('retrievereq');
+		$dataProvider=new CActiveDataProvider('Leavereq');
+		$this->render('indexreq',array(
+			'dataProvider'=>$dataProvider,
+		));
 	}
 
 	/**
@@ -148,6 +174,19 @@ class UserController extends Controller
 		));
 	}
 
+	public function actionRetrievereq()
+	{
+		$model=new Leavereq();
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Leavereq']))
+			$model->attributes=$_GET['Leavereq'];
+
+		$this->render('retrievereq',array(
+			'model'=>$model,
+		));
+	}
+
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -158,6 +197,14 @@ class UserController extends Controller
 	public function loadModel($id)
 	{
 		$model=User::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+
+	public function loadModelreq($leavereq_id)
+	{
+		$model=Leavereq::model()->findByPk($leavereq_id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

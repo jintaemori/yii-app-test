@@ -35,7 +35,9 @@
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>(!Yii::app()->user->isGuest AND Yii::app()->user->id=="admin")),
 				array('label'=>'Loginemp', 'url'=>array('/site/loginemp'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logoutemp ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>(!Yii::app()->user->isGuest AND Yii::app()->user->id!="admin"))
+				array('label'=>'Logoutemp ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>(!Yii::app()->user->isGuest AND Yii::app()->user->id!="admin")),
+				array('label'=>'Leave Request', 'url'=>array('/emp/leavereq'), 'visible'=>(!Yii::app()->user->isGuest AND Yii::app()->user->id!="admin")),
+				array('label'=>'Check Requests', 'url'=>array('/user/indexreq'), 'visible'=>(!Yii::app()->user->isGuest AND Yii::app()->user->id=="admin"))
 			),
 		)); ?>
 	</div><!-- mainmenu -->
